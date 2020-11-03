@@ -1,0 +1,118 @@
+.mainContainer{
+    height:80vw;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: flex-start;
+ 
+}
+
+.subContainer1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; 
+    text-align: left;   
+    align-content: flex-start;
+    flex: 50%;
+    width: 100%;
+    
+}
+
+
+
+.imageContainer{
+    flex: 40%;
+    height: 100%;
+    justify-content: center;
+    
+}
+
+.imageclass{
+    width: 80%;
+    height: 80%;
+    object-fit: fill;
+    margin: 1em 0 1em 1em;
+}
+
+.paraContainer{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 50%;
+    height: 100%;
+    margin-left: 1em;
+    align-content: flex-start;
+    
+}
+
+.redText{
+    font-size: 2.2rem;
+    color: maroon;
+}
+
+.listContainer{
+    display: flex;
+    flex-flow: row wrap;
+    
+  }
+
+  .About_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    margin-right: 3rem!important;
+    margin-bottom: 1rem;
+    flex: 50%;
+  }
+  .About_ul li:before {
+    content: '✓';
+    background-color: none;
+    margin-right: 1rem!important;
+    margin-bottom: 1rem;
+  }
+
+  .subContainer2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start; 
+    text-align: left;   
+    align-content: flex-start;
+    flex: 50%;
+    width: 100%;
+    
+}
+
+.personsContainer{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 80%;
+    width: 100%;
+    
+}
+
+.persondiv1{
+    flex: 50%;
+    height: 100%;
+    
+}
+
+.persondiv2{
+    flex: 50%;
+    height: 100%;
+    
+}
+
+.personImageclass{
+    width: 40%;
+    height: 40%;
+    object-fit: fill;
+    margin: 1em 0 1em 1em;
+    align-self: center;
+}
+
+.marginclass{
+    margin: 1em 0 1em 1em;
+}
+
