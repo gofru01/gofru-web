@@ -9,19 +9,24 @@ function BlogPage(props) {
         <title>Gofru Blog</title>
       </Head>
     <div>
-      <h1>Gofru Blog</h1>
-      <div style={{height:"50vw", textAlign: "center"}}>
-      <ul>
+      <h1 style={{textAlign: "center"}}>Gofru Blog</h1>
+      <div className="blog-container" >
+      
         {props.blogs.map((blog, idx) => {
           return (
-            <li key={idx}>
-              <Link href={`/blog/${blog.slug}`}>
-                <a>{blog.title}</a>
-              </Link>
-            </li>
+            <Link href={`/blog/${blog.slug}`}>
+              <a  className= "blog-card" key={idx}>
+            
+             
+                {blog.title}
+                {blog.slug}
+                {blog.date}
+              
+            
+            </a>
+            </Link>
           );
         })}
-      </ul>
       </div>
     </div>
     </>

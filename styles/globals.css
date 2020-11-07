@@ -169,3 +169,23 @@ li.dropdown {
     display: none;
   }
 }
+
+
+/* Blog */
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card {
+  width: 65vw;
+  height: 25vh;
+  margin: 10px;
+  background-color: rgb(251, 251, 251);
+}
+
+.blog-card :hover {
+  cursor: pointer;
+}

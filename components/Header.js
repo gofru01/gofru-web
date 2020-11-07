@@ -5,11 +5,11 @@ import Link from 'next/link';
 export default function Header() {
   return (
     
-    <header class="header">
+    <header className="header">
       <ul>
         <li> <Link href="/"><a>Gofru</a></Link></li>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn"><span className="nav-icon"></span></label>
         <ul className="menu"  style={{ float: "right" }}>
           <li><Link href="/about"><a>About</a></Link></li>
           <li><Link href="/blog"><a>Blog</a></Link></li>
