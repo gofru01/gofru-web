@@ -16,6 +16,11 @@ export default class AboutPage extends React.Component {
     <section id="about" className="about">
       <div className="container" data-aos="fade-up">
 
+        <div className="section-title" style={{paddingTop:"35px"}}>
+          <h2>About Us</h2>
+          <p>Who We Are</p>
+        </div>
+
         <div className="row justify-content-end">
           <div className="col-lg-11">
             <div className="row justify-content-end">
