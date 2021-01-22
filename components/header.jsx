@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import GFLink from '../components/gfLink'
 
 
 export default class AppHeader extends React.Component {
@@ -21,14 +22,19 @@ export default class AppHeader extends React.Component {
                 <nav className="nav-menu d-none d-lg-block">
                   <ul>
                     
-                    <li className="active"><Link href="/">Home</Link></li>
-                    <li><Link href="/about.html"><a>About</a></Link></li>
+                    {/* <li><Link href="/">Home</Link></li> */}
+                    <GFLink href="/" children={<li className=""><a>Home</a></li>}></GFLink>
+                    <GFLink href="/about.html" children={<li className=""><a>About</a></li>}></GFLink>
+                    
                     {/* <li><a href="#about">About</a></li> */}
-                    <li><Link href="/services.html"><a>Services</a></Link></li>
+                    <GFLink href="/services.html" children={<li className=""><a>Services</a></li>}></GFLink>
+                    
                     {/* <li><a href="#services">Services</a></li> */}
-                    <li><Link href="/portfolio.html"><a>Portfolio</a></Link></li>
+                    <GFLink href="/portfolio.html" children={<li className=""><a>Portfolio</a></li>}></GFLink>
+                   
                     {/* <li><a href="#portfolio">Portfolio</a></li> */}
-                    <li><Link href="/team.html"><a>Team</a></Link></li>
+                    <GFLink href="/team.html" children={<li className=""><a>Team</a></li>}></GFLink>
+                   
                     {/* <li><a href="#team">Team</a></li> */}
                     <li className="drop-down"><a href="">Drop Down</a>
                       <ul>
@@ -47,7 +53,8 @@ export default class AppHeader extends React.Component {
                         <li><a href="#">Drop Down 4</a></li>
                       </ul>
                     </li>
-                    <li><Link href="/contact.html"><a>Contact</a></Link></li>
+                    <GFLink href="/contact.html" children={<li className=""><a>Contact</a></li>}></GFLink>
+                    
                     {/* <li><a href="#contact">Contact</a></li> */}
           
                   </ul>
